@@ -6,7 +6,7 @@ import { Color } from './Header'
 const Main = () => {
   return (
     <main className="flex items-center container mx-auto py-20 w-11/12">
-      <img className="w-1/2 mr-16" src={beauty} alt="beauty" />
+      <img data-aos="zoom-in" className="w-1/2 mr-16" src={beauty} alt="beauty" />
       <section>
         <Color className="text-lg font-bold">about us</Color>
         <h2 className="text-5xl font-bold my-3">Beauty sense given over the years</h2>

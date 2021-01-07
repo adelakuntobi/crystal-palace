@@ -13,6 +13,7 @@ const Intro = styled(Color)`
 
 const Container = styled.section`
   background: rgba(108, 154, 208, 0.05);
+  overflow-x: hidden;
 `;
 
 const Definetely = () => {
@@ -26,11 +27,11 @@ const Definetely = () => {
           <p className="mr-3">the state or quality of being elegant; beauty as resulting from choice qualities and the complete absence of what deforms or impresses unpleasantly</p>
             <section className="grid grid-flow-col gap-3 items-center absolute z-10 w-8/12 mt-16">
               <DefinitelyDiv />
-              <DefinitelyDiv />
-              <DefinitelyDiv />
+              <DefinitelyDiv delay="1000" />
+              <DefinitelyDiv delay="1300" />
             </section>
           </div>
-          <img src={necklace} alt="necklace" className="w-6/12" />
+          <img data-aos="fade-down-left" src={necklace} alt="necklace" className="w-6/12" />
         </div>
         <DefaultButton className="text-white mx-auto my-16">Purchase Now</DefaultButton>
       </div>

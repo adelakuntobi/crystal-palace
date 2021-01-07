@@ -7,12 +7,15 @@ import { Color } from './Header'
 import { OtherButton } from './Header'
 
 const Showcase = () => {
+  // data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"
+// data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000"
+// data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"
   return (
-    <section className="flex flex-col lg:flex-row items-center container mx-auto py-32 w-11/12">
-      <div className="relative w-full lg:w-1/2">
-        <img className="mx-auto" src={Rectangle1} alt="beauty" />
-        <img className=" absolute bottom-0 left-0" src={Rectangle2} alt="beauty" />
-        <img className=" absolute bottom-0 right-0" src={Rectangle3} alt="beauty" />
+    <section className="overflow-x-hidden flex flex-col lg:flex-row items-center container mx-auto py-32 w-11/12">
+      <div data-aos="fade-down" className="relative w-full lg:w-1/2">
+        <img data-aos="fade-down" className="mx-auto" src={Rectangle1} alt="beauty" />
+        <img data-aos-delay="1000" data-aos="fade-right" className="absolute bottom-0 left-0" src={Rectangle2} alt="beauty" />
+        <img data-aos-delay="1300" data-aos="fade-left" className="absolute bottom-0 right-0" src={Rectangle3} alt="beauty" />
       </div>
       <section className="w-1/2 pl-16">
         <Color className="text-lg font-bold">Our varieties</Color>
