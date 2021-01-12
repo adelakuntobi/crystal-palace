@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import DefaultButton from '../components/button';
-import headerBg from '../images/headerBg.svg';
-import Scroller from '../components/below'
-import Navbar from './Navbar'
+import DefaultButton from '../../components/button';
+import headerBg from '../../images/headerBg.svg';
+import Scroller from '../../components/below'
+import Navbar from '../Navbar'
 
 const HeaderSection = styled.header`
   background-image: url(${headerBg});

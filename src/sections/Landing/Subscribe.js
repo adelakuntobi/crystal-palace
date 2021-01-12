@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import DefaultButton from '../components/button';
-import Rectangle2 from '../images/Frame41.svg'
+import DefaultButton from '../../components/button';
+import Rectangle2 from '../../images/Frame41.svg'
+
 const Section = styled.section`
   background-image: url(${Rectangle2});
   background-position: center;

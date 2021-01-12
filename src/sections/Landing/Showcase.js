@@ -1,8 +1,8 @@
 import React from 'react'
-import DefaultButton from '../components/button'
-import Rectangle1 from '../images/Rectangle1.svg'
-import Rectangle2 from '../images/Rectangle2.png'
-import Rectangle3 from '../images/Rectangle3.svg'
+import DefaultButton from '../../components/button'
+import Rectangle1 from '../../images/Rectangle1.svg'
+import Rectangle2 from '../../images/Rectangle2.png'
+import Rectangle3 from '../../images/Rectangle3.svg'
 import { Color } from './Header'
 import { OtherButton } from './Header'
 
@@ -19,7 +19,7 @@ const Showcase = () => {
       </div>
       <section className="w-1/2 pl-16">
         <Color className="text-lg font-bold">Our varieties</Color>
-        <h2 className="text-5xl font-bold my-3">Earrings, Necklaces, Bracelets, you name it.</h2>
+        <h2 data-aos="fade-up" className="text-5xl font-bold my-3"><span data-aos-delay="1200">Earrings, Necklaces, </span><span data-aos="fade-up" data-aos-delay="1700">Bracelets, you name it.</span></h2>
         <p className="text-sm leading-tight py-3">A charming choice, this diamond infinity pendant
         makes a sweet statement of forever. Crafted in sterling silver,
         this entrancing look showcases a petite diamond - artfully

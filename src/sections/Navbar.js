@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 import logo from '../images/logo.png'
 
@@ -9,12 +10,26 @@ const Nav = styled.nav`
 `;
 
 const NavList = styled.ul`
+  align-items: center;
   li{
     &:hover{
       color: #6C9AD0;
       cursor: pointer;
     }
   }
+`;
+
+const SignUp = styled.li`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    background: #6C9AD0;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    width: 100px;
 `;
 
 
@@ -31,6 +46,12 @@ const Navbar = () => {
           <li>About Us</li>
           <li>Services</li>
           <li>Our Varieties</li>
+          <NavLink to="/login">
+            <li>Login</li>
+          </NavLink>
+          <NavLink to="/signup">
+            <SignUp>Sign Up</SignUp>
+          </NavLink>
         </NavList>
       </section>
     </Nav>

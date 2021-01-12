@@ -1,9 +1,9 @@
 import React from 'react'
 import { Color } from './Header';
 import styled from 'styled-components'
-import DefinitelyDiv from '../components/definitelyDiv';
-import necklace from '../../src/images/main.png'
-import DefaultButton from '../components/button';
+import DefinitelyDiv from '../../components/definitelyDiv';
+import necklace from '../../images/main.png'
+import DefaultButton from '../../components/button';
 
 
 const Intro = styled(Color)`
@@ -23,7 +23,7 @@ const Definetely = () => {
         <div className="flex relative">
           <div>
           <Intro>Services</Intro>
-          <h2>Definitely topnotch</h2>
+          <h2 data-aos="fade-up">Definitely topnotch</h2>
           <p className="mr-3">the state or quality of being elegant; beauty as resulting from choice qualities and the complete absence of what deforms or impresses unpleasantly</p>
             <section className="grid grid-flow-col gap-3 items-center absolute z-10 w-8/12 mt-16">
               <DefinitelyDiv />

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
-import sponsor1 from '../images/sponsor1.svg';
-import sponsor2 from '../images/sponsor2.svg';
-import sponsor3 from '../images/sponsor3.svg';
-import sponsor4 from '../images/sponsor4.svg';
+import sponsor1 from '../../images/sponsor1.svg';
+import sponsor2 from '../../images/sponsor2.svg';
+import sponsor3 from '../../images/sponsor3.svg';
+import sponsor4 from '../../images/sponsor4.svg';
 
 const Section = styled.section`
   img{
