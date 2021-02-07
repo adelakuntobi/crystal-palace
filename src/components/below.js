@@ -11,7 +11,7 @@ const Scroller = () => {
     duration: 500,
     shift: 90,
     wheel: true,
-    className:'bg-white absolute bottom-10 right-0 w-11/12 lg:w-7/12',
+    className:'bg-white absolute bottom-10 right-0 w-11/12 lg:w-7/12 hidden lg:block',
     arrows: false,
   };
   return (

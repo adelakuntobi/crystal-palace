@@ -6,7 +6,8 @@ import DefaultButton from '../components/button';
 import logo from '../images/logo.png'
 import { InputTag, Logo } from './Login'
 import { toast } from 'react-toastify'
-
+import { connect } from 'react-redux';
+import { register } from "../redux/actions/authActions"
 
 
 
@@ -37,8 +38,8 @@ const Section = styled.section`
   }
 `;
 
-const Signup = () => {
-
+const Signup = (props) => {
+  const { register } = props
   // Create their initalstates
   const [data, setData] = useState({
     name: "",
@@ -70,6 +71,7 @@ const Signup = () => {
     else {
       toast.success("Everything don set, carry go")
       console.log("Everything don set, carry go")
+      register( name, email, password)
     }
 
   }
@@ -123,5 +125,10 @@ const Signup = () => {
     </Section>
   )
 }
-
-export default Signup
+// Getting the actions and mapping them to props
+const mapDispatchToProps = (dispatch) => {
+  return {
+    register: () => dispatch(register()),
+  }
+}
+export default connect(null, mapDispatchToProps)(Signup)

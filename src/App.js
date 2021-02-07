@@ -16,7 +16,7 @@ AOS.init({
 });
 function App() {
   return (
-    <div className="App ">
+    <div className="App relative">
       <GlobalStyle />
       <Switch>
         <Route exact path="/" component={DefaultLanding} />

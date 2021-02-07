@@ -34,12 +34,12 @@ const Header = () => {
     <HeaderSection>
       <Navbar />
       <section className="flex flex-col justify-center items-center text-white">
-        <p className="italic text-xl text-white">Add ineresting details to your fashion style</p>
-        <h1 className="text-6xl font-bold w-9/12 text-center text-white">
+        <p className="italic text-sm md:text-xl text-white">Add ineresting details to your fashion style</p>
+        <h1 className="text-5xl md:text-6xl font-bold w-9/12 text-center text-white">
           <Color>real beauty</Color> is hidden in the
           <Color> magic of crystal</Color>
         </h1>
-        <div className="grid gap-6 grid-flow-col mt-16">
+        <div className="grid gap-6 grid-flow-row md:grid-flow-col mt-16">
           <DefaultButton>purchase now</DefaultButton>
           <OtherButton>show varieties</OtherButton>
         </div>

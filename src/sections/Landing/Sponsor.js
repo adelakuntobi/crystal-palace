@@ -14,7 +14,7 @@ const Section = styled.section`
 
 const Sponsor = () => {
   return (
-    <Section className="flex items-center justify-between container w-11/12 mx-auto py-16">
+    <Section className="flex flex-wrap items-center justify-between container w-11/12 mx-auto py-16">
       <img src={sponsor1} alt="sponsor1" />
       <img src={sponsor2} alt="sponsor2" />
       <img src={sponsor3} alt="sponsor3" />

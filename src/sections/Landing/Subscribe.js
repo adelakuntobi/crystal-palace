@@ -19,7 +19,7 @@ const Section = styled.section`
 const Subscribe = () => {
   return (
     <Section className="py-20 px-3">
-      <h1 className="text-white text-5xl font-bold pb-12">Subscribe to our newsletter today!</h1>
+      <h1 className="text-white text-4xl md:text-5xl font-bold pb-12 text-center">Subscribe to our newsletter today!</h1>
       <DefaultButton>purchase now</DefaultButton>
     </Section>
   )

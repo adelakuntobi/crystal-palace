@@ -1,0 +1,4 @@
+// Types
+export const REGISTER_SUCCESS = "REGISTER SUCCESS"
+export const REGISTER_FAIL = "REGISTER FAIL"
+// const REGISTER_FAIL = "REGISTER FAIL"
