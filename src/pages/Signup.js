@@ -13,23 +13,14 @@ import { register } from "../redux/actions/authActions"
 
 const Section = styled.section`
   max-width: 1440px;
-  background-image: url("${necklace}");
+  /* background-image: url("${necklace}"); */
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  &::before {
-  content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-  }
-
+  
   @media (min-width: 1024px) { 
     background-image: none;
     &::before {
@@ -71,15 +62,15 @@ const Signup = (props) => {
     else {
       toast.success("Everything don set, carry go")
       console.log("Everything don set, carry go")
-      register( name, email, password)
+      register(name, email, password)
     }
 
   }
   return (
     <Section className="mx-auto flex flex-row-reverse items-center justify-center">
       <img src={necklace} alt="necklace" className="hidden lg:block object-cover w-5/12" />
-      <div className="m-auto py-5 w-7/12 lg:w-4/12 container">
-        <Logo left="3rem" className="absolute flex justify-between items-center w-6/12">
+      <div className="m-auto py-5 w-11/12 md:w-7/12 lg:w-4/12 container">
+        <Logo left="3rem" className="absolute lg:flex justify-between items-center w-6/12 hidden">
           <Link to="/" className="flex justify-between items-center">
             <img src={logo} alt="logo" className="w-8" />
             <p className="capitalize italic font-bold text-lg ml-2">Crystal palace</p>
@@ -87,6 +78,10 @@ const Signup = (props) => {
           <p className="font-bold">Already a member? <Link to="/login" className="text-blue-700">Sign in now</Link></p>
         </Logo>
         <div className="mb-4 font-bold">
+          <Link to="/" className="my-12 flex justify-center items-center lg:hidden">
+            <img src={logo} alt="logo" className="w-8" />
+            <p className="capitalize font-bold text-2xl ml-2">Crystal palace</p>
+          </Link>
           <h1 className="text-4xl">Create Account</h1>
           <p className="text-red-600 text-lg ">{errorMsg}</p>
         </div>
@@ -120,6 +115,7 @@ const Signup = (props) => {
               className="" />
           </div>
           <DefaultButton type="submit" className="text-lg" width="250px" padding=".75rem">Sign Up</DefaultButton>
+          <p className="block lg:hidden pt-4 font-bold">Already a member? <Link to="/login" className="text-blue-700">Sign in now</Link></p>
         </form>
       </div>
     </Section>
